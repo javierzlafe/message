@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8"> <!-- Codificación -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsive -->
+  <title>Chat WebSockets</title> <!-- Título -->
+  <script src="/socket.io/socket.io.js"></script> <!-- Cliente de socket.io -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script> <!-- SweetAlert2 -->
+</head>
+<body>
+  <h1>Chat</h1> <!-- Título -->
+
+  <input id="mensaje" placeholder="Escribí tu mensaje"> <!-- Input del mensaje -->
+  <button id="btnEnviar">Enviar</button> <!-- Botón de envío -->
+
+  <ul id="lista"></ul> <!-- Lista donde mostramos mensajes -->
+
+  <script src="./client.js"></script> <!-- Lógica del cliente -->
+</body>
+</html>
