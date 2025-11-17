@@ -30,6 +30,7 @@ io.on('connection', socket => {            // cuando se conecta un cliente
   })
 })
 
-server.listen(3000, () => {                // levantamos el servidor
-  console.log('Servidor escuchando en http://localhost:3000')
+const PORT = process.env.PORT || 3000
+server.listen(PORT, () => {
+  console.log(`Servidor escuchando en http://localhost:${PORT}`)
 })
